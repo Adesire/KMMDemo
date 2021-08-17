@@ -10,6 +10,6 @@ pluginManagement {
 rootProject.name = "KMMDemo"
 
 
-include(":KMMDemoAndroid")
+include(":kmmDemoAndroid")
 include(":shared")
 
