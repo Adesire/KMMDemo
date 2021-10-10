@@ -19,6 +19,7 @@ class RestaurantViewModel: ViewModel() {
     fun restaurants(): LiveData<List<Restaurant>> = _restaurants
 
     fun getListOfRestaurants() = viewModelScope.launch {
+        println("getting data from server")
         when (val response = repository.getRestaurantList()) {
             is Success -> {
                 _restaurants.postValue(response.data)

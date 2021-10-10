@@ -36,7 +36,7 @@ allprojects {
 }
 
 extra.apply {
-    set("coroutine_version", "1.5.1")
+    set("coroutine_version", "1.5.2-native-mt")
     set("moko_mvvm_version", "0.11.0")
     set("kodeinVersion", "7.5.1")
     set("ktor_version", "1.6.2")

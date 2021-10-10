@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.konan.properties.Properties
 
 plugins {
     kotlin("multiplatform")
+    //kotlin("native.cocoapods")
     id("com.android.library")
     id("kotlinx-serialization")
     id("com.squareup.sqldelight")
@@ -32,6 +33,7 @@ kotlin {
             }
         }
     }
+
     sourceSets {
         val commonMain by getting {
             dependencies {
